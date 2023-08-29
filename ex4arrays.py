@@ -8,6 +8,7 @@ aMax = 10
 
 loto = []
 aposta = []
+cont = 0
 
 for i in range(rMax):
     loto.append(random.randint(1,50))
@@ -16,17 +17,18 @@ for i in range(aMax):
     aposta.append(int(input(f"Insira um valor para apostar na loteria [{i}]: ")))
 
 for a in range(aMax):
-    cont = 0
     for r in range(rMax):
         if aposta[a] == loto[r]:
             cont += 1
 
 if cont == 5:
-    print('Você ganhou a loteria!')
+    print('\nVocê ganhou a loteria!')
 elif cont == 0:
-    print("Você não acertou nenhum número!")
+    print("\nVocê não acertou nenhum número!")
 else:
-    print(f"Você acertou {cont} pontos!")
+    print(f"\nVocê acertou {cont} pontos!")
+
+print(f"\nOs números da loteria eram: {loto}")
 
 
 
