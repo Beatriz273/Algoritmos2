@@ -21,4 +21,3 @@ for s in range(sMax):
            xVetor.append(rVetor[r])
 
 print(f"Os valores iguais nos vetores são: {xVetor}")
-
