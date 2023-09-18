@@ -1,19 +1,17 @@
-# Faça um algoritmo que lê 10 valores para uma variável do tipo lista de nome x.
-#Após completar toda a leitura da lista, verificar se cada valor armazenado na
-#lista é par ou ímpar. Se for par, fazer com que o valor seja atualizado para o
-#resultado da multiplicação do valor contido pelo índice. Se for impar fazer com
-#que a lista receba o valor do seu próprio índice
+# Elabore um algoritmo que leia duas listas de 5 posições, após a leitura realizar a
+# soma e imprima o resultado da soma entre as duas listas de inteiros
 
-x = [0,0,0,0,0,0,0,0,0,0]
+l1 = []
+l2 = []
+l3 = []
 
-for i in range (10):
-    x[i] = int(input(f"Informe o valor do índice {i}:"))
+N = 2
 
-for i in range (10):
-    if (x[i] % 2 == 0):
-        x[i] = x[i] * i
-    else:
-        x[i] = i
+for i in range(N):
+    l1.append(int(input(f"Insira um valor para a lista um no indice ({i}): ")))
+    l2.append(int(input(f"Insira um valor para a lista dois no indice ({i}): ")))
+    l3.append(l1[i]+l2[i])
 
-for i in range (10):
-    print(f"Os novos valores de sua lista são: [{i}]:[{x[i]}]")
+print (l1)
+print (l2)
+print (l3)
